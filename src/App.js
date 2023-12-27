@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>total-assessment-mock exam</div>
+    <div>total-assessment-mock test</div>
   )
 }
 
