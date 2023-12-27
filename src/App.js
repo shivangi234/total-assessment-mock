@@ -1,8 +1,12 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 const App = () => {
   return (
-    <div>total-assessment-mock test</div>
+    <Routes>
+      <Route path="/" element={<Dashboard />} />
+      </Routes>
   )
 }
 
