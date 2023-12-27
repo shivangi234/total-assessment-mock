@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+  /*--menu-item-main-color: #546E7A;
+  --menu-item-fade-color: #CFD8DC;*/
+
+  --menu-item-main-color: #01579B;
+  --menu-item-fade-color: #97d2ed;
+}
+.ListItem.Mui-selected {
+    color: var(--menu-item-main-color);
+    background-color: var(--menu-item-fade-color) !important;
+    border-left: 5px solid var(--menu-item-main-color)  !important;
+    /* clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 49%, 0% 0%); */
+    
+}
+.ListItem:hover{
+  color: var(--menu-item-main-color);
+  border-left: 5px solid var(--menu-item-main-color) !important;
+  background-color: #e5e1f2;
+  color: #180d6f;
+  transition: 0.1s;
+  border-radius: 0px 10px 10px 0px;
+
+}

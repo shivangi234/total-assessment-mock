@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { deepOrange } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import {  Link, useLocation } from 'react-router-dom';
 import STLIND from "../Assets/images/STLIND.jpg"
 import {Avatar,AppBar,Box,Collapse,Divider ,Drawer,IconButton,List,ListItem,ListItemText,ListItemIcon,Toolbar,Typography} from '@mui/material';
@@ -143,8 +143,8 @@ function AppBarDrawer(props) {
         <Toolbar sx={{paddingRight:'0px'}}>
 
           {/* oraganisation name */}
-          <Typography variant="h5" noWrap>
-            Silicon Techlab Pvt Ltd
+          <Typography variant="h4" noWrap fontFamily="poppins">
+            Silicon Techlab Pvt. Ltd.
           </Typography>
 
           {/* profile */}
@@ -154,7 +154,7 @@ function AppBarDrawer(props) {
                 sx={{ ml: 2 }}
               >
                 <Avatar
-                  sx={{ bgcolor: deepOrange[500] }}
+                  sx={{ bgcolor: grey[400] }}
                 />
               </IconButton>
           </Box>

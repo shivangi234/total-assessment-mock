@@ -1,27 +1,8 @@
 import React from "react";
-import AppBarDrawer from "../../Components/AppbarDrawer";
-import {
-  Card,
-  CardContent,
-  CardActions,
-  CssBaseline,
-  Grow,
-  Grid,
-  Chip,
-  Divider,
-  Button,
-  Box,
-  Toolbar,
-  Typography,
-} from "@mui/material";
-
-import Paper from "@mui/material/Paper";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
-import FiberNewIcon from "@mui/icons-material/FiberNew";
 import { Helmet } from "react-helmet";
+import AppBarDrawer from "../../Components/AppbarDrawer";
+import {Avatar,Card,CardContent,CardActions,CssBaseline,Grow,Grid,Chip,Divider,Button,Box,Toolbar,Typography,Paper,List,ListItemButton,ListItemAvatar} from "@mui/material"
+import FiberNewIcon from "@mui/icons-material/FiberNew";
 
 const drawerWidth = 240;
 
@@ -51,9 +32,8 @@ const Dashboard = () => {
           >
             <Toolbar />
             <Grid container spacing={2} justifyContent="center"  >
-
+              {/* Exam Fetch Count */}
               <Grid item lg={4} xs={3}>
-
                 <Card sx={{ borderTop: 2, borderColor: '#0066cc' }}>
                   <Typography
                     sx={{
@@ -169,6 +149,7 @@ const Dashboard = () => {
                   <Divider />
                 </Card>
               </Grid>
+             {/* Exam Type Count */}
               <Grid item lg={4} xs={3}>
 
                 <Card sx={{ borderTop: 2, borderColor: '#388E3C' }}>
@@ -268,6 +249,7 @@ const Dashboard = () => {
 
                 </Card>
               </Grid>
+             {/* Exam Sync Count */}
               <Grid item lg={4} xs={3}>
                 <Card sx={{ borderTop: 2, borderColor: ' #000099 ' }}>
                   <Typography
@@ -385,12 +367,10 @@ const Dashboard = () => {
                 </Card>
               </Grid>
             </Grid>
-
             <br />
 
-
+              {/* Exam Details */}
             <div>
-
               <Grid container spacing={2} justifyContent="center">
                 <Grid item lg={12} xs={12}>
                   <Typography
@@ -413,55 +393,6 @@ const Dashboard = () => {
                   <Paper elevation={6}>
                     <Card>
                       <CardContent>
-                        <List
-                          className="ListItem"
-                          dense
-                          sx={{
-                            width: "100%",
-                            bgcolor: "#FAFAFA",
-                            cursor: "pointer",
-                          }}
-                        >
-                          <Grid container>
-                            <Grid item lg={1} xs={1} >
-                              <ListItemButton>
-                                <ListItemAvatar>
-                                  <Avatar
-                                    alt={``}
-
-                                  />
-                                </ListItemAvatar>
-                              </ListItemButton>
-                            </Grid>
-                            <Grid item lg={5} xs={5}  sx={{ mt: 1 }}>
-                              <Typography variant="h7" fontFamily="cursive">
-
-                                Common Entrance Exam Test NPTEL (2022)
-                              </Typography>
-                            </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
-                              <Typography variant="h7">
-                                <b> Exam Starts:</b> 10:00 AM
-                              </Typography>
-                            </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
-                              <Typography variant="h7">
-                                {" "}
-                                <b>Exam Finish:</b> 1:00 PM
-                              </Typography>
-                            </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
-                              <Button
-                                className="button"
-                                size="small"
-                                variant="contained"
-                                color="primary"
-                              >
-                                <span>More Details</span>
-                              </Button>
-                            </Grid>
-                          </Grid>
-                        </List>
                         <List
                           className="ListItem"
                           dense
