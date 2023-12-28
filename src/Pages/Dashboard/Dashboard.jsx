@@ -33,7 +33,7 @@ const Dashboard = () => {
             <Toolbar />
             <Grid container spacing={2} justifyContent="center"  >
               {/* Exam Fetch Count */}
-              <Grid item lg={4} xs={3}>
+              <Grid item lg={4} xs={3} md={4} sm={4}>
                 <Card sx={{ borderTop: 2, borderColor: '#0066cc' }}>
                   <Typography
                     sx={{
@@ -150,7 +150,7 @@ const Dashboard = () => {
                 </Card>
               </Grid>
              {/* Exam Type Count */}
-              <Grid item lg={4} xs={3}>
+              <Grid item lg={4} xs={3} md={4} sm={4}>
 
                 <Card sx={{ borderTop: 2, borderColor: '#388E3C' }}>
                   <Typography
@@ -250,7 +250,7 @@ const Dashboard = () => {
                 </Card>
               </Grid>
              {/* Exam Sync Count */}
-              <Grid item lg={4} xs={3}>
+              <Grid item lg={4} xs={3} md={4} sm={4}>
                 <Card sx={{ borderTop: 2, borderColor: ' #000099 ' }}>
                   <Typography
                     sx={{
@@ -372,7 +372,7 @@ const Dashboard = () => {
               {/* Exam Details */}
             <div>
               <Grid container spacing={2} justifyContent="center">
-                <Grid item lg={12} xs={12}>
+                <Grid item lg={12} xs={12}  md={12} sm={12}>
                   <Typography
                     variant="h6"
                     color="#000099"
@@ -415,7 +415,7 @@ const Dashboard = () => {
                               </ListItemButton>
                             </Grid>
                             <Grid item lg={5} xs={5} sx={{ mt: 1 }}>
-                              <Typography variant="h7" fontFamily="cursive">
+                              <Typography variant="h7" >
                                 {" "}
                                 Multiple Choice Question Test Utkal University
                                 (2022)
@@ -466,7 +466,7 @@ const Dashboard = () => {
                               </ListItemButton>
                             </Grid>
                             <Grid item lg={5} xs={5} sx={{ mt: 1 }}>
-                              <Typography variant="h7" fontFamily="cursive">
+                              <Typography variant="h7" >
                                 {" "}
                                 Common Entrance Exam Test BPUT (2022)
                               </Typography>
@@ -516,9 +516,8 @@ const Dashboard = () => {
                               </ListItemButton>
                             </Grid>
                             <Grid item lg={5} sx={{ mt: 1 }}>
-                              <Typography variant="h7" fontFamily="cursive">
-                                {" "}
-                                Final Semester Examination OUAT (2022)
+                              <Typography variant="h7">
+                                Final Semester Exam OUAT (2022)
                               </Typography>
                             </Grid>
                             <Grid item lg={2} sx={{ mt: 1 }}>
