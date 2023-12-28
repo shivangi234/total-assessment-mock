@@ -404,7 +404,7 @@ const Dashboard = () => {
                           }}
                         >
                           <Grid container>
-                            <Grid item lg={1} xs={1}>
+                            <Grid item lg={1} xs={1} md={1} sm={1}>
                               <ListItemButton>
                                 <ListItemAvatar>
                                   <Avatar
@@ -414,25 +414,25 @@ const Dashboard = () => {
                                 </ListItemAvatar>
                               </ListItemButton>
                             </Grid>
-                            <Grid item lg={5} xs={5} sx={{ mt: 1 }}>
+                            <Grid item lg={5} xs={5} md={5} sm={5} sx={{ mt: 1 }}>
                               <Typography variant="h7" >
                                 {" "}
                                 Multiple Choice Question Test Utkal University
                                 (2022)
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 <b>Exam Starts:</b> 10:00 AM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2}  md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 {" "}
                                 <b>Exam Finish:</b> 1:00 PM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2}  sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Button
                                 className="button"
                                 size="small"
@@ -455,7 +455,7 @@ const Dashboard = () => {
                           }}
                         >
                           <Grid container style={{borderBlockColor:"#03A9F4 "}}>
-                            <Grid item lg={1} xs={1}>
+                            <Grid item lg={1} xs={1} md={1} sm={1}>
                               <ListItemButton>
                                 <ListItemAvatar>
                                   <Avatar
@@ -465,24 +465,24 @@ const Dashboard = () => {
                                 </ListItemAvatar>
                               </ListItemButton>
                             </Grid>
-                            <Grid item lg={5} xs={5} sx={{ mt: 1 }}>
+                            <Grid item lg={5} xs={5} md={5} sm={5} sx={{ mt: 1 }}>
                               <Typography variant="h7" >
                                 {" "}
                                 Common Entrance Exam Test BPUT (2022)
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 <b>Exam Starts:</b> 10:00 AM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 {" "}
                                 <b>Exam Finish:</b> 1:00 PM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} xs={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Button
                                 className="button"
                                 size="small"
@@ -505,7 +505,7 @@ const Dashboard = () => {
                           }}
                         >
                           <Grid container>
-                            <Grid item lg={1}>
+                            <Grid item lg={1} xs={1} md={1} sm={1}>
                               <ListItemButton>
                                 <ListItemAvatar>
                                   <Avatar
@@ -515,23 +515,23 @@ const Dashboard = () => {
                                 </ListItemAvatar>
                               </ListItemButton>
                             </Grid>
-                            <Grid item lg={5} sx={{ mt: 1 }}>
+                            <Grid item lg={5} xs={5} md={5} sm={5} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 Final Semester Exam OUAT (2022)
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2}  xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 <b>Exam Starts:</b> 10:00 AM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2}  xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
                                 {" "}
                                 <b>Exam Finish:</b> 1:00 PM
                               </Typography>
                             </Grid>
-                            <Grid item lg={2} sx={{ mt: 1 }}>
+                            <Grid item lg={2}  xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Button
                                 className="button"
                                 size="small"
