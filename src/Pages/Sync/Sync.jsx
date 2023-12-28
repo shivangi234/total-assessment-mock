@@ -243,7 +243,7 @@ const Dashboard = () => {
             <Card sx={{p:1}}>
               <Grid container>
                 <Grid item lg={2}>
-                <Typography variant="h5" fontFamily="sans-serif" fontWeight="bold" >Sync</Typography>
+                <Typography variant="h5" fontFamily="sans-serif" fontWeight="bold" >Sync r</Typography>
                 </Grid>
                 <Grid item lg={8}></Grid>
                 <Grid item lg={2}>
