@@ -3,7 +3,6 @@ import AppBarDrawer from "../../Components/AppbarDrawer";
 
 import DataTable from "react-data-table-component";
 import { Helmet } from "react-helmet";
-import Fade from "react-reveal/Fade";
 import axios from "axios";
 
 import {Button,Box,Card,CardContent,CssBaseline,Chip,Grid,IconButton,Paper,Toolbar,Typography,TextField,ButtonGroup,Modal,FormControl,InputLabel,MenuItem,Select,
@@ -762,7 +761,6 @@ const Dashboard = () => {
       </Modal>
 
       {/* Card content Update Attendance */}
-      <Fade top>
         <Modal
           open={updateAttendance}
           aria-labelledby="modal-modal-title"
@@ -856,7 +854,6 @@ const Dashboard = () => {
             </Grid>
           </Grid>
         </Modal>
-      </Fade>
     </>
   );
 };
