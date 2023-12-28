@@ -259,7 +259,7 @@ const Dashboard = () => {
                 <CardContent sx={{ margin: "15px" }}>
                   <Grid container spacing={2}>
                   {/* Question Type */}
-                    <Grid item lg={2}>
+                    <Grid item lg={2} sm={2} md={2} xs={2}>
                       <FormControl fullWidth sx={{ minWidth: 140 }}>
                         <InputLabel id="question_type">Exam Type</InputLabel>
                         <Select
@@ -279,7 +279,7 @@ const Dashboard = () => {
                       </FormControl>
                     </Grid>
                   {/* Start Date */}
-                    <Grid item lg={2}>
+                    <Grid item lg={2} sm={2} md={2} xs={2}>
                     <FormControl fullWidth sx={{  minWidth: 140 }}>
                         <TextField
                           onChange={handleChange}
@@ -295,7 +295,7 @@ const Dashboard = () => {
                       </FormControl>
                     </Grid>
                   {/* End Date */}
-                    <Grid item lg={2}>
+                    <Grid item lg={2} sm={2} md={2} xs={2}>
                       <FormControl fullWidth sx={{minWidth: 140 }}>
                         <TextField
                           name="end_date"
@@ -311,7 +311,7 @@ const Dashboard = () => {
                       </FormControl>
                     </Grid>
                   {/* Quiz status */}
-                    <Grid item lg={2}>
+                    <Grid item lg={2} sm={2} md={2} xs={2}>
                     <FormControl fullWidth sx={{ minWidth: 140 }}>
                         <InputLabel id="question_type">Status</InputLabel>
                         <Select
@@ -329,9 +329,9 @@ const Dashboard = () => {
                         </Select>
                       </FormControl>
                     </Grid>
-                    <Grid item lg={1}></Grid>
+                    <Grid item lg={1} sm={1} md={1} xs={1}></Grid>
                     {/* View button */}
-                    <Grid item lg={3}>
+                    <Grid item lg={3} sm={3} md={3} xs={3}>
                       <Box sx={{float:"right",mt:0.4}}>
                       <Button sx={{padding: "13px 52px 13px 52px",backgroundColor:"#0288D1"}}
                         size="medium"
@@ -352,7 +352,7 @@ const Dashboard = () => {
               {showDataTable ? (
                 <Paper elevation={8}>
                   <Grid container sx={{ mt: 2 }} justifyContent="center">
-                    <Grid item lg={12} md={12} xs={12}>
+                    <Grid item lg={12} md={12}  sm={12} xs={12}>
                       <Card sx={{overflowY:"auto"}}>
                           <CardContent>
                             <DataTable
@@ -391,7 +391,7 @@ const Dashboard = () => {
         {/* Fetch Data Header */}
         <Box sx={style}>
           <Grid container>
-            <Grid item lg={2}>
+            <Grid item lg={2} sm={2} md={2} xs={2}>
               <Typography
                 id="modal-modal-title"
                 variant="h6"
@@ -401,8 +401,8 @@ const Dashboard = () => {
                 Fetch Data
               </Typography>
             </Grid>
-            <Grid item lg={8}></Grid>
-            <Grid item lg={2}>
+            <Grid item lg={8} sm={8} md={8} xs={8}></Grid>
+            <Grid item lg={2} sm={2} md={2} xs={2}>
               <Box sx={{ textAlign: "right",mb:1 }}>
                 <Button
                   variant="contained"
@@ -439,14 +439,14 @@ const Dashboard = () => {
             </Typography>
             <CardContent sx={{ margin: "5px" }}>
               <Grid container>
-                <Grid item lg={10}>
+                <Grid item lg={10} sm={10} md={10} xs={10}>
                   <Typography variant="h7" component="div" float="left">
                     <span style={{ fontWeight: "bold" }}>Exam Name:-</span>
                     &nbsp;&nbsp;
                     React + Node Test - ( 2023 - 2024 )
                   </Typography>
                 </Grid>
-                <Grid item lg={2}>
+                <Grid item lg={2} sm={2} md={2} xs={2}>
                     <Button
                       color="success"
                       variant="contained"
@@ -459,7 +459,7 @@ const Dashboard = () => {
               </Grid>
               {authorization ? (
                 <Grid container justifyContent="center" spacing={2} sx={{mt:0.1}}>
-                  <Grid item lg={3}>
+                  <Grid item lg={3} sm={3} md={3} xs={3}>
                     <TextField
                       placeholder=" Enter Exam Sync Password"
                       variant="outlined"
@@ -478,8 +478,8 @@ const Dashboard = () => {
                       fullWidth
                     />
                   </Grid>
-                  <Grid item lg={3}>
-                    <Button
+                  <Grid item lg={3} sm={3} md={3} xs={3}>
+                    <Button 
                       variant="contained"
                       float="center"
                       color="info"
@@ -528,7 +528,7 @@ const Dashboard = () => {
             </Typography>
             <CardContent sx={{ margin: "5px" }}>
               <Grid container>
-                <Grid item lg={10}>
+                <Grid item lg={10} sm={10} md={10} xs={10}>
                   <Typography variant="h7" component="div" float="left">
                     <span style={{ fontWeight: "bold" }}>Exam Name:-</span>
                     &nbsp;
@@ -537,7 +537,7 @@ const Dashboard = () => {
                 </Grid>
                 <br />
 
-                <Grid item lg={2}>
+                <Grid item lg={2} sm={2} md={2} xs={2}>
                     <Button
                       color="warning"
                       variant="contained"
@@ -571,7 +571,7 @@ const Dashboard = () => {
           {/* Update Data Header */}
         <Box sx={style}>
           <Grid container>
-            <Grid item lg={2}>
+            <Grid item lg={2} sm={2} md={2} xs={2}>
               <Typography
                 id="modal-modal-title"
                 variant="h6"
@@ -581,8 +581,8 @@ const Dashboard = () => {
                 Update Data
               </Typography>
             </Grid>
-            <Grid item lg={8}></Grid>
-            <Grid item lg={2}>
+            <Grid item lg={8} sm={8} md={8} xs={8}></Grid>
+            <Grid item lg={2} sm={2} md={2} xs={2}>
               <Box sx={{ textAlign: "right",mb:1 }}>
                 <Button
                   variant="contained"
@@ -618,7 +618,7 @@ const Dashboard = () => {
             </Typography>
             <CardContent sx={{ margin: "5px" }}>
               <Grid container>
-                <Grid item lg={10}>
+                <Grid item lg={10} sm={10} md={10} xs={10}>
                   <Typography variant="h7" component="div" float="left">
                     <span style={{ fontWeight: "bold" }}>Exam Name:-</span>
                     &nbsp;
@@ -666,7 +666,7 @@ const Dashboard = () => {
                   </Stack>
                 </Grid>
 
-                <Grid item lg={2}>
+                <Grid item lg={2} sm={2} md={2} xs={2}>
                   {btnState3 ? (
                     <Button
                       color="warning"
@@ -721,7 +721,7 @@ const Dashboard = () => {
             </Typography>
             <CardContent sx={{ margin: "5px" }}>
               <Grid container>
-                <Grid item lg={10}>
+                <Grid item lg={10} sm={10} md={10} xs={10}>
                   <Typography variant="h7" component="div" float="left">
                     <span style={{ fontWeight: "bold" }}>Exam Name:-</span>
                     &nbsp;
@@ -745,7 +745,7 @@ const Dashboard = () => {
                     />
                   </Typography>
                 </Grid>
-                <Grid item lg={2}>
+                <Grid item lg={2} sm={2} md={2} xs={2}>
                 <Button
                     color="warning"
                     variant="contained"
@@ -768,7 +768,7 @@ const Dashboard = () => {
           style={{ marginTop: "290px" }}
         >
           <Grid container justifyContent="center">
-            <Grid item lg={8}>
+            <Grid item lg={8} sm={8} md={8} xs={8}>
               <Box>
                 <Card sx={{ mt: 1 }}>
                   <Typography
@@ -811,7 +811,7 @@ const Dashboard = () => {
                         <br />
                       </Grid>
                       <Grid container>
-                      <Grid item lg={3}>
+                      <Grid item lg={3} sm={3} md={3} xs={3}>
                         <ButtonGroup>
                           <Button
                             variant="contained"
@@ -828,7 +828,7 @@ const Dashboard = () => {
                       </Grid>
                       </Grid>
                      <Grid container>
-                     <Grid item lg={3}>
+                     <Grid item lg={3} sm={3} md={3} xs={3}>
                         <Button color="info" variant="contained" size="medium">
                           <FileUploadIcon /> Upload
                         </Button>
@@ -836,7 +836,7 @@ const Dashboard = () => {
                       </Grid>
                      </Grid>
                       
-                      <Grid item lg={6}></Grid>
+                      <Grid item lg={6} sm={6} md={6} xs={6}></Grid>
                       <Typography
                         sx={{ fontSize: "14px",mt:0.6 }}
                         component="div"

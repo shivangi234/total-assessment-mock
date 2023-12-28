@@ -13,7 +13,7 @@ const Dashboard = () => {
         <title>Total Assesment | Dashboard</title>
       </Helmet>
       <Box
-        sx={{ display: "flex", height: "100vh", background: 'linear-gradient(to top right, #ffffff 46%, #c6c4ff 100%)' }}
+        sx={{ display: "flex", height: "100vh", backgroundColor: '#f2f7ff' }}
       >
         <CssBaseline />
         <AppBarDrawer />
