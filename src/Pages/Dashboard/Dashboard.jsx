@@ -462,7 +462,8 @@ useEffect(() => {
                             </Grid>
                             <Grid item lg={3} xs={5} md={5} sm={5} sx={{ mt: 1 }}>
                               <Typography variant="h7" >
-                                {quizName}
+                                {/* {quizName} */}
+                                Silicon Techlab Pvt. Ltd.
                               </Typography>
                             </Grid>
                             <Grid item lg={3} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
