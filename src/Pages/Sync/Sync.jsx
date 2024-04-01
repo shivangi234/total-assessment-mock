@@ -207,6 +207,7 @@ const Dashboard = () => {
     setprogressBarupdateresult(true);
   };
   //Authorization
+
   const syncExam = () => {
     setAuthorization(true);
   };
@@ -222,8 +223,9 @@ const Dashboard = () => {
       <Box
         sx={{
           display: "flex",
-          height: "200vh",
+          height: "100vh",
           backgroundColor: "#f2f7ff",
+          overflowY:"hidden"
         }}
       >
         <CssBaseline />
@@ -240,7 +242,6 @@ const Dashboard = () => {
           <Toolbar />
       {/* Appbar */}
           <Box>
-            <Card sx={{p:1}}>
               <Grid container>
                 <Grid item lg={2}>
                 <Typography variant="h5" fontFamily="sans-serif" fontWeight="bold" >Sync</Typography>
@@ -250,10 +251,9 @@ const Dashboard = () => {
                 <Typography variant="h5" fontFamily="sans-serif"  textAlign="right" >Home <span style={{fontSize:"18px", color:"#9E9E9E"}}> Sync </span> </Typography>
                 </Grid>
               </Grid>
-              </Card>
           </Box>
       {/* selection section */}
-          <Box sx={{ "& > :not(style)": {  mt: 3, width: "100%", height: 120 }}}>
+          <Box sx={{ "& > :not(style)": {  mt: 2, width: "100%", height: 120 }}}>
             <Paper elevation={18}>
               <Card>
                 <CardContent sx={{ margin: "15px" }}>
@@ -353,7 +353,7 @@ const Dashboard = () => {
                 <Paper elevation={8}>
                   <Grid container sx={{ mt: 2 }} justifyContent="center">
                     <Grid item lg={12} md={12}  sm={12} xs={12}>
-                      <Card sx={{overflowY:"auto"}}>
+                      <Card sx={{overflowY:"auto",height:"450px"}}>
                           <CardContent>
                             <DataTable
                               customStyles={customStyles}

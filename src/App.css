@@ -43,7 +43,7 @@
   --menu-item-fade-color: #CFD8DC;*/
 
   --menu-item-main-color: #01579B;
-  --menu-item-fade-color: #97d2ed;
+  --menu-item-fade-color: #d5cfe9;
 }
 .ListItem.Mui-selected {
     color: var(--menu-item-main-color);
