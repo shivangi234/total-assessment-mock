@@ -1,5 +1,4 @@
 import React ,{useState,useEffect} from "react";
-import moment from "moment";
 import axios from "axios";
 import { Helmet } from "react-helmet";
 import AppBarDrawer from "../../Components/AppbarDrawer";
@@ -9,28 +8,8 @@ import FiberNewIcon from "@mui/icons-material/FiberNew";
 const drawerWidth = 240;
 
 const Dashboard = () => {
-  const [quizName,setQuizName] = useState();
-  const [quizOpenTime,setQuizOpenTime] =  useState();
-  const [quizCloseTime,setQuizCloseTime] =  useState();
   const [apiData, setApiData] = useState([]);
 
-//All quizlst
-  const getAllQuiz = async () => {
-   const requestData = {
-     orgCode : "STLIND"
-   };
-   try {
-     const response = await axios.post(`http://localhost:5000/api/v1/quiz`,requestData);
-     console.log(response.data);
-     setQuizName(response.data.result[0].quiz_name);
-     setQuizOpenTime(response.data.result[0].quiz_open_date_time);
-     setQuizCloseTime(response.data.result[0].quiz_close_date_time);
-     console.log(response.data.result[0].quiz_name);
-
-   } catch (error) {
-     console.log(error);
-   }
- }
 //loading data in card
  const loadData = async () => {
   const requestData = {
@@ -55,7 +34,6 @@ const getTotalMCQSAQCount = () => "0" + apiData.filter(item => item.question_typ
 const getTotalLAQCount = () => "0" + apiData.filter(item => item.question_type === "LAQ").length;
 
 useEffect(() => {
-  getAllQuiz();
   loadData();
 }, []);
 
@@ -468,12 +446,12 @@ useEffect(() => {
                             </Grid>
                             <Grid item lg={3} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
-                                <b>Exam Starts:</b> {moment(quizOpenTime).format("DD MMM YYYY HH:mm")}
+                                <b>Exam Starts:</b> 02 April 2024  10:30AM
                               </Typography>
                             </Grid>
                             <Grid item lg={3} xs={2}  md={2} sm={2} sx={{ mt: 1 }}>
                               <Typography variant="h7">
-                                <b>Exam Finish:</b> {moment(quizCloseTime).format("DD MMM YYYY HH:mm")}
+                                <b>Exam Finish:</b> 02 April 2024  1:30AM
                               </Typography>
                             </Grid>
                             <Grid item lg={2} xs={2} md={2} sm={2} sx={{ mt: 1 }}>
